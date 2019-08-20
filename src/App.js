@@ -1,24 +1,76 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+import { Link, Element, Events } from "react-scroll";
+
+import Home from "./components/home";
+import Project from "./components/project";
+import Skills from "./components/skills";
+
+function Header() {
+  return (
+    <Navbar fixed="top" style={{ background: "#edf2f4" }}>
+      <Navbar.Brand>Daniel Luan</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link as="div">
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Home
+            </Link>
+          </Nav.Link>
+
+          <Nav.Link as="div">
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+}
 
 function App() {
+  useEffect(() => {
+    Events.scrollEvent.register("begin", function(to, element) {
+      console.log("begin", arguments);
+    });
+    return () => {
+      Events.scrollEvent.remove("begin");
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+
+      <Element name="home">
+        <Home />
+      </Element>
+      <div style={{ paddingTop: "200px" }} />
+      <Element name="skill">
+        <Skills />
+      </Element>
+      <div style={{ paddingTop: "200px" }} />
+      <Element name="projects">
+        <Project />
+      </Element>
+      <div style={{ paddingTop: "200px" }} />
     </div>
   );
 }

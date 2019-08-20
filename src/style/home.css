@@ -1,0 +1,7 @@
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  font-family: "Roboto", georgia, serif;
+}
