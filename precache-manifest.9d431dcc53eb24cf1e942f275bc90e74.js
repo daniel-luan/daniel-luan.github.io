@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29c3613c84dc0beec87c030c114cfbdf",
+    "revision": "4272f095f5dd7b4774851527f8bf2f53",
     "url": "/index.html"
   },
   {
-    "revision": "2ab3d38e19ae39d99b9f",
-    "url": "/static/css/main.47a48738.chunk.css"
+    "revision": "a0656cf88233746d0596",
+    "url": "/static/css/main.26982caa.chunk.css"
   },
   {
-    "revision": "4aab23631c301bf7f08d",
-    "url": "/static/js/2.e8372b60.chunk.js"
+    "revision": "03883be8b3fc9a195bab",
+    "url": "/static/js/2.34b26614.chunk.js"
   },
   {
-    "revision": "2ab3d38e19ae39d99b9f",
-    "url": "/static/js/main.d29f77b0.chunk.js"
+    "revision": "a0656cf88233746d0596",
+    "url": "/static/js/main.bc941297.chunk.js"
   },
   {
     "revision": "bfd14db7b975b9377460",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c171886490e1f14aee76b84e8246d6d3",
     "url": "/static/media/Arduino_Logo.c1718864.svg"
-  },
-  {
-    "revision": "b9ee8fb6de937f707ae1d0128e8a6015",
-    "url": "/static/media/Bash_Logo_Favicon_Black_and_White.b9ee8fb6.svg"
   },
   {
     "revision": "06596577ae4143d9d51e2184310e23dd",
@@ -62,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "05a3e30fdf60ebe9d00cf4725d44bd42",
     "url": "/static/media/React-icon.05a3e30f.svg"
+  },
+  {
+    "revision": "16e235318d12eff8e58c6cf03620c688",
+    "url": "/static/media/Tux_Mono.16e23531.svg"
   },
   {
     "revision": "dd60b11e9762b6e25f6d4ce981a1eeae",
