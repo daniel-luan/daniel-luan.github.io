@@ -9,7 +9,7 @@ import FlaskLogo from "../image/flask-seeklogo.com.svg";
 import DjangoLogo from "../image/Django.svg";
 import MongoLogo from "../image/mongodb.svg";
 import GitLogo from "../image/Git-logo.svg";
-import BashLogo from "../image/Bash_Logo_Favicon_Black_and_White.svg";
+import BashLogo from "../image/Tux_Mono.svg";
 import BootstrapLogo from "../image/Boostrap_logo.svg";
 import NginxLogo from "../image/nginx.svg";
 import ReactLogo from "../image/React-icon.svg";

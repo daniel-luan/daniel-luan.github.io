@@ -24,7 +24,11 @@ export class Project extends React.Component {
     return (
       <Container
         fluid
-        style={{ height: "250px", paddingLeft: "10%", paddingRight: "10%" }}
+        style={{
+          height: "250px",
+          paddingLeft: "10%",
+          paddingRight: "10%"
+        }}
       >
         <div style={{ marginTop: "15%" }} />
         <Row>

@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-import { Link, Element, Events } from "react-scroll";
+import { Link, Element } from "react-scroll";
 
 import Home from "./components/home";
 import Project from "./components/project";
@@ -15,31 +15,39 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as="div">
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Home
-            </Link>
-          </Nav.Link>
+          <Link
+            as={"Nav.Link"}
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <Nav.Link as="text">Home</Nav.Link>
+          </Link>
 
-          <Nav.Link as="div">
-            <Link
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Projects
-            </Link>
-          </Nav.Link>
+          <Link
+            activeClass="active"
+            to="skill"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <Nav.Link as="text">Technologies</Nav.Link>
+          </Link>
+
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <Nav.Link as="text">Projects</Nav.Link>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -47,14 +55,6 @@ function Header() {
 }
 
 function App() {
-  useEffect(() => {
-    Events.scrollEvent.register("begin", function(to, element) {
-      console.log("begin", arguments);
-    });
-    return () => {
-      Events.scrollEvent.remove("begin");
-    };
-  }, []);
   return (
     <div>
       <Header />
@@ -62,15 +62,13 @@ function App() {
       <Element name="home">
         <Home />
       </Element>
-      <div style={{ paddingTop: "200px" }} />
+      <div />
       <Element name="skill">
         <Skills />
       </Element>
-      <div style={{ paddingTop: "200px" }} />
       <Element name="projects">
         <Project />
       </Element>
-      <div style={{ paddingTop: "200px" }} />
     </div>
   );
 }

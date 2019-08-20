@@ -48,9 +48,9 @@ export function Skills() {
                   >
                     <img
                       style={{
-                        marginTop: "20px",
-                        width: "4vw",
-                        height: "4vw",
+                        marginTop: "30px",
+                        width: "5rem",
+                        height: "5rem",
                         objectFit: "contain"
                       }}
                       src={col.image}
