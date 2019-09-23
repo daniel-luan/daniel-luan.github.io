@@ -5,6 +5,17 @@ import PythonLogo from "../image/python-logo-generic.svg";
 export var projectData = [
   { title: "", details: [] },
   {
+    title: "AR Hand Gesture Battle Simulator",
+    desc: "AR Hand Gesture Battle Simulator",
+    details: [
+      "Constructed an AR battle station where users can interact with each other using hand gestures and voice commands",
+      "Hand gesture recognition done with Keras data sent using Server-Sent Events to frontend written in React paired with holographic display",
+      "Chosen as a finalist out of 300+ team at Hack the North 2019; winner of Voiceflow API challenge"
+    ],
+    url: "https://bit.ly/2mm1CJn",
+    background: null
+  },
+  {
     title: "Watllet",
     desc: "Fast and convenient way to check Waterloo Watcard balance",
     details: [
