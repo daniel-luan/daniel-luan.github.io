@@ -29,17 +29,6 @@ function Header() {
 
           <Link
             activeClass="active"
-            to="skill"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            <Nav.Link as="text">Technologies</Nav.Link>
-          </Link>
-
-          <Link
-            activeClass="active"
             to="projects"
             spy={true}
             smooth={true}
@@ -47,6 +36,17 @@ function Header() {
             duration={500}
           >
             <Nav.Link as="text">Projects</Nav.Link>
+          </Link>
+
+          <Link
+            activeClass="active"
+            to="skill"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <Nav.Link as="text">Technologies</Nav.Link>
           </Link>
         </Nav>
       </Navbar.Collapse>
@@ -63,12 +63,14 @@ function App() {
         <Home />
       </Element>
       <div />
-      <Element name="skill">
-        <Skills />
-      </Element>
       <Element name="projects">
         <Project />
       </Element>
+      <div style={{ marginTop: "100px" }} />
+      <Element name="skill">
+        <Skills />
+      </Element>
+      <div style={{ marginTop: "100px" }} />
     </div>
   );
 }
