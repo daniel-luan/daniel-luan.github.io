@@ -69,7 +69,7 @@ export function Card() {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1vxy3AEOPh8qnthqQywU8SUX2Qx_pN44p/view?usp=sharing"
+            href="https://drive.google.com/open?id=1GSoXOo5nR36jG0LxziODVO95bkjc9enK"
             target="_blank"
             rel="noopener noreferrer"
           >
